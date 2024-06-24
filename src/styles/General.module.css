@@ -1,0 +1,323 @@
+
+.mainInfo{
+    display:flex;
+    padding-top: 40px;
+     padding-left: 10px;
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+
+
+.leftInfoDiv{
+   
+    width: 72%;
+    
+}
+.rightInfoDiv{
+    
+    width: 24%;
+}
+
+.typeDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.typeDiv2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.labelType{
+    display:flex;
+    flex-direction: column;
+}
+
+.typeField{
+    width: 160px;
+    height: 26px;
+    border-radius: 5px;
+    border-color: rgb(218, 215, 215);
+}
+
+.nameField{
+    width:400px;
+    height:26px;
+    border-radius: 5px;
+     border-style:solid;
+     border-width:1px;
+    border-color:  rgb(212, 210, 210);
+    
+}
+.skuField{
+    width:300px;
+    height:26px;
+    border-radius: 5px;
+    border-style:solid;
+     border-width:1px;
+    border-color: rgb(218, 215, 215);
+}
+.allLabel{
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: rgb(78, 78, 78);
+   
+}
+.slugDiv{
+     display: flex;
+     flex-direction: row;
+     width:400px;
+
+}
+.slugField{
+    width:140px;
+    height:26px;
+    border-radius: 5px;
+    border-style:solid;
+     border-width:1px;
+    border-color: rgb(218, 215, 215);
+}
+.slugField2{
+    width:250px;
+    height:26px;
+    margin-top: 19px;
+    margin-left: 30px;
+    border-style:solid;
+     border-width:1px;
+    border-radius: 5px;
+    border-color: rgb(218, 215, 215);
+    
+}
+.statusDiv{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.vendorField{
+    width: 140px;
+    height: 26px;
+    border-style:solid;
+    border-color:  rgb(218, 215, 215);
+     border-width:1px;
+    border-radius: 5px;
+}
+.statusField{
+    width: 140px; 
+    height: 26px;
+    border-style:solid;
+    border-color:  rgb(218, 215, 215);
+     border-width:1px;
+    border-radius: 5px;
+}
+.mainPriceDiv{
+    margin-left: 14px;
+    margin-right: 5px;
+    margin-top: 30px;
+    border: 1px solid rgb(214, 212, 212);
+    height:170px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.mainOthersDiv{
+    margin-left: 14px;
+    margin-right: 5px;
+    margin-top: 30px;
+    border: 1px solid rgb(214, 212, 212);
+    height:68px;
+}
+
+.priceDivs{
+    display:flex;
+    margin-bottom: 15px;
+    
+}
+.priceField{
+    width:130px;
+    height:26px;
+    border-radius: 5px;
+    border-style:solid;
+     border-width:1px;
+    border-color:  rgb(218, 215, 215);
+    margin-right: 30px;
+}
+.saleField{
+    width:130px;
+    height:26px;
+    border-style:solid;
+     border-width:1px;
+    border-radius: 5px;
+   
+    border-color:  rgb(218, 215, 215);
+}
+.vendorPrice{
+    display:flex;
+    width: 50%;
+    border-right: 1px solid  rgb(206, 203, 203);
+}
+.vendorHeading{
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.inrField{
+    width:150px;
+    height:26px;
+    border-radius: 5px;
+    border-style:solid;
+     border-width:1px;
+    margin-right: 15px;
+    border-color:  rgb(218, 215, 215); 
+}
+.basePriceField{
+    width:160px;
+    height:26px;
+    border-style:solid;
+     border-width:1px;
+    border-radius: 5px;
+   
+    border-color:  rgb(218, 215, 215);
+}
+.priceDivs2{
+    display: flex;
+}
+.giftPrice{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.chargesField{
+    width:100px;
+    height:26px;
+    margin-right: 15px;
+    border-style:solid;
+     border-width:1px;
+    border-radius: 5px;
+    border-color:  rgb(218, 215, 215);
+}
+.vendorInrField{
+    width:100px;
+    height:26px;
+    margin-right: 25px;
+    border-radius: 5px;
+    border-style:solid;
+     border-width:1px;
+    border-color:  rgb(218, 215, 215);
+}
+.vendorBaseField{
+    width:150px;
+    height:26px;
+    border-radius: 5px;
+    border-style:solid;
+     border-width:1px;
+    border-color:  rgb(218, 215, 215);
+}
+.mainOthersDiv{
+    display:flex;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+.locationField{
+    width:200px;
+    height:26px;
+    margin-right: 10px;
+    border-style:solid;
+     border-width:1px;
+    border-radius: 5px;
+    border-color:  rgb(218, 215, 215);
+
+}
+.messageField{
+    width:150px;
+    height:26px;
+    margin-right: 10px;
+    border-style:solid;
+     border-width:1px;
+    border-radius: 5px;
+    border-color:  rgb(218, 215, 215);
+
+}
+.uploadField{
+    width:150px;
+    height:26px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-color:  rgb(218, 215, 215);
+}
+.tagField{
+    width:200px;
+    height:26px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border-color:  rgb(218, 215, 215);
+}
+.deliverField{
+    width:120px;
+    height:26px;
+    border-style:solid;
+     border-width:1.8px;
+    border-radius: 5px;
+    border-color:  rgb(218, 215, 215);
+}
+.rightInfoDiv{
+    margin-left: 15px; 
+     border: 1px solid rgb(214, 212, 212);
+     height:415px;
+     padding-top: 50px;
+     padding-left: 30px;
+ }
+ .giftHeading{
+    position: absolute;
+    bottom: 49%;
+    font-weight: 600;
+ 
+    font-size: 14px;
+ }
+ .topCheckbox{
+    margin-bottom: 14px;
+    margin-left: 2px;
+ }
+ .BottomDiv{
+    margin-top: 40px;
+ }
+ .checkbox{
+    margin-bottom: 14px;
+   
+ }
+ .checkboxContainer{
+    color: rgb(78, 78, 78);
+ }
+ .option{
+    color: rgb(187, 21, 21);
+ }
+ .pricing{
+    font-size: 18px;
+    position: absolute;
+    bottom: 65%;
+   left:3%;
+  background-color: white;
+  padding-left:3px;
+  padding-right:3px;
+  color: rgb(78, 78, 78);
+
+ }
+ .others{
+    font-size: 18px;
+    position: absolute;
+    bottom: 29%;
+   left:3%;
+  background-color: white;
+  padding-left:3px;
+  padding-right:3px;
+  color: rgb(78, 78, 78);
+ }
+ .tags{
+    font-size: 18px;
+    position: absolute;
+  top:10%;
+  background-color: white;
+  padding-left:3px;
+  padding-right:3px;
+  color: rgb(78, 78, 78);
+ 
+ }

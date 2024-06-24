@@ -1,0 +1,116 @@
+
+.mainAttribute{
+  /* height:357px; */
+  width: 45%;
+  border:1px solid rgb(190, 186, 186);
+  margin-top: 4%;
+  margin-left: 4%;
+
+}
+.div1{
+
+  display: flex;
+  justify-content: flex-end;
+ 
+  height:28px;
+  border-bottom:1px solid rgb(190, 186, 186) ;
+}
+.div2{
+  font-size: 16px;
+  height:28px;
+  border-bottom:1px solid rgb(190, 186, 186) ;
+}
+.div3{
+  display: flex;
+  text-align: center;
+   
+  font-size: 18px;
+  height:28px;
+  border-bottom:1px solid rgb(190, 186, 186) ;
+}
+.heading{
+  margin-top: 4px;
+  margin-left: 40px;
+}
+.eggCategories{
+  border-bottom:1px solid rgb(190, 186, 186) ;
+}
+.egg{
+  display: flex;
+   
+  height:38px;
+  border-bottom:1px solid rgb(190, 186, 186) ;
+}
+.eggless{
+  display: flex;
+  height:38px;
+  border-bottom:1px solid rgb(190, 186, 186) ;
+}
+.miniEmptyDiv{
+  width:30px;
+  border-right:1px solid rgb(190, 186, 186) ;
+}
+.miniBigDiv{
+  width:100px;
+  border-right:1px solid rgb(190, 186, 186) ;
+}
+.eggText{
+  display: flex;
+  color: rgb(102, 101, 101);
+  text-align: center;
+ padding-top: 5px;
+ font-size: 18px;
+  width:160px;
+  border-right:1px solid rgb(190, 186, 186) ;
+}
+.inputField1{
+  width:80px;
+  border-right:1px solid rgb(190, 186, 186) ;
+}
+.inputField2{
+  width:80px;
+  border-right:1px solid rgb(190, 186, 186) ;
+}
+.inputField3{
+  
+  width:80px;
+  border-right:1px solid rgb(190, 186, 186) ;
+}
+.inputField4{
+  display: flex;
+ 
+  justify-content: center;
+  width:80px;
+}
+.inputField{
+  text-align: end;
+  width:76px;
+  height:35px;
+}
+.bottomDiv{
+  margin-top: 2px;
+ 
+  border-top: 1px solid rgb(190, 186, 186);
+}
+.flavour{
+  height:28px;
+  border-bottom:1px solid rgb(190, 186, 186) ;
+  margin-top: 4px;
+  border-top: 1px solid rgb(190, 186, 186)
+}
+.div2{
+  display: flex;
+
+  justify-content: flex-end;
+  text-align: center;
+}
+.div2Style{
+  
+  margin-right: 16px;
+  margin-top: 4px;
+}
+.div1Style{
+  margin-right: 20%;
+  margin-top: 4px;
+  font-size: 18px;
+}
