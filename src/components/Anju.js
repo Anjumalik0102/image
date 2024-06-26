@@ -1,8 +1,8 @@
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import styles from "@/styles/Product.module.css";
-
+import { FaPlayCircle } from "react-icons/fa";
 
 export default function ProductComponent() {
   const [selectedElement, setSelectedElement] = useState(null)
@@ -33,7 +33,8 @@ export default function ProductComponent() {
       id: 5,
     },
   ])
-
+  const [showIcon, setShowIcon] = useState(true)
+  const videoRef = useRef()
   const allowDrop = (ev) => {
     ev.preventDefault();
   }
@@ -83,9 +84,9 @@ export default function ProductComponent() {
   const drop = (e, id) => {
     // console.log(e.dataTransfer.getData('oldId'), id)
     // e.dataTransfer.getData()
-   
-    let id1 =images.filter((data)=>data.id== e.dataTransfer.getData('oldId')) 
-    let id2 = images.filter((data)=>data.id== id) 
+
+    let id1 = images.filter((data) => data.id == e.dataTransfer.getData('oldId'))
+    let id2 = images.filter((data) => data.id == id)
 
     // let id1 =images[e.dataTransfer.getData('oldId')-1]
     // let id2 = images[id-1]
@@ -109,7 +110,11 @@ export default function ProductComponent() {
 
   return (
     <>
-      
+      {showIcon &&
+        <FaPlayCircle onClick={() => {
+          console.log(videoRef)
+          videoRef.current.play()
+        }} />}
       <div className={styles.home}>
 
         <div className={styles.leftImageDiv}
@@ -206,24 +211,28 @@ export default function ProductComponent() {
             {selectedElement && selectedElement?.type.includes('video') ?
 
               <>
-                <video
-                  // poster="/images/w3html5.gif"
-                  className={styles.draggable}
-                  // onDragStart={handleDragStart}
-                  controls
-                  onClick={(e) => {
-                    console.log(e)
-                  }
-                  }
-                  src={selectedElement.value}
-                  id={selectedElement.id}
-                />
+
+                <video controls className={styles.draggable} ref={videoRef}
+                  onPlay={() => {
+                    setShowIcon(false)
+                    console.log('played')
+                  }}
+                  onPause={() => {
+                    setShowIcon(true)
+                    console.log('pause')
+                  }}
+                >
+                  <source src={selectedElement.value} type="video/mp4" />
+                </video>
+
               </> : null}
 
             {selectedElement && selectedElement?.type.includes('image') ?
 
               <>
+
                 <img
+
                   className={styles.draggable}
                   alt="Draggable Image"
                   id={selectedElement.id}
@@ -233,7 +242,11 @@ export default function ProductComponent() {
                   }}
                 />
               </> : null}
-
+            {showIcon && selectedElement && selectedElement?.type.includes("video") &&
+              <FaPlayCircle style={{ bottom: "50%", position: "absolute", color: "white" }} onClick={() => {
+                console.log(videoRef)
+                videoRef.current.play()
+              }} />}
 
           </div>
 
